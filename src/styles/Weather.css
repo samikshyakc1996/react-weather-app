@@ -1,6 +1,6 @@
 .Weather{
     border:1px solid rgb(227, 225, 225);
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     margin:0 auto;
 }
@@ -51,4 +51,8 @@ width: auto;
 .col-sm-2 {
     padding: 0 20px;
     margin: 0 20px;
+}
+
+.Weather .col-sm-2 .weeklyforecast-details{
+    opacity: 0.5;
 }

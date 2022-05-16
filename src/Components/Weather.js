@@ -15,16 +15,23 @@ export default function Weather(){
        
         let weeklyForecast=response.data.daily;   
         let actualOutput= weeklyForecast.map(function(daily,index){
-            // console.log("daily forecast",daily);
-            console.log("index is:",index);
+            console.log("daily forecast",daily);
+            
             let iconUrl=`http://openweathermap.org/img/w/${daily.weather[0].icon}.png`;
+           let days=new Date(daily.dt*1000);
+           days=days.toString();
+        //    console.log("typeof(days):",typeof(days));
+           let dayToday=days.slice(0,3);
+        //    console.log("day today:",dayToday);
             let outputData="";
             if(index<6){
              outputData=
             <>
             <div className="col-sm-2">
-                {Math.round(daily.temp.max)}
-               <div> <img src={iconUrl} alt="icon" /></div>
+                <div className="weeklyforecast-details">{dayToday}</div>
+                <div> <img src={iconUrl} alt="icon" /></div>
+                
+              <div className="weeklyforecast-details">{Math.round(daily.temp.max)}°</div>
                 </div>
            
             </>
