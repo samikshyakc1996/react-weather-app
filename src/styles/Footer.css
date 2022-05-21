@@ -1,12 +1,20 @@
-.Footer p{
-    position: fixed;
-   
-    bottom: 0;
+.Footer{
     width: 100%;
+    font-size: 1rem;
+}
+.container{
+    width: 70%;
+}
+.Footer p{
+    position: fixed; 
+    bottom: 0;
+   
     /* Height of the footer*/ 
-    height: 25px;
-    padding: 10px 10px 0px 10px;
+    height: 2em;
+   width: 100%;
     background: rgb(203, 187, 248);
     margin:0px;
     text-align: center;
+   
+    
 }

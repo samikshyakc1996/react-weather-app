@@ -3,22 +3,72 @@
     height: 25rem;
     width: 100%;
     margin:0 auto;
+    padding: 2em;
 }
-
+form {
+    display: flex;
+    justify-content: space-between;
+}
 .Weather form input[type=text]{
-    width: 20rem;
-    height: 2rem;
-    margin-top: 2rem;
+    width: 80%;
+    height: 3em;
+    /* margin: 0 0  2rem 0; */
 }
 .Weather form input[type=submit]{
     background-color: rgb(34, 181, 222);
-    padding: 5px;
+    /* padding: 1em auto; */
     color:#f5f5f5;
     border-radius: 4px;
-    margin-left: 4px;
-    height: 2rem;
+    margin-left: 1em;
+    height: 3em;
+    width: 20%;
+}
+.Weather .weather-summary{
+    display: flex;
+    justify-content: space-between;
+    color:#70757A;
+    margin: 3em auto;
+}
+.Weather .weather-details{
+    display: flex;
+    font-size: 1rem;
 }
 
+.Weather .weather-details-phw{
+    
+    font-size: 0.9rem;
+    padding: 1em 0 0 1em;
+}
+
+.Weather .part-one{
+    text-align: left;
+}
+.Weather .part-two{
+display: flex;
+flex-direction: column;
+text-align: right;
+}
+.weather-summary .part-two .city-name{
+    color:#222;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+.Weather .weather-summary img{
+    height: 5em;
+    width: 100%;
+   
+}
+.Weather .weather-summary .temperature{
+    font-size: 3rem;
+  
+    color: #222;
+}
+.weather-summary .temperature-unit {
+   display: flex;
+   padding-top: 0.7em;
+   margin:0 0.4em;
+}
+/*
 .Weather .weather-summary{
     display: flex;
     flex-direction: column;
@@ -55,4 +105,4 @@ width: auto;
 
 .Weather .col-sm-2 .weeklyforecast-details{
     opacity: 0.5;
-}
+} */
