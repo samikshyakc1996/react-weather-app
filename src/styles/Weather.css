@@ -53,14 +53,15 @@ text-align: right;
     font-size: 1.4rem;
     margin-top: 0;
 }
-.Weather .weather-summary img{
-    height: 5em;
+.Weather .weather-summary canvas{
+    height: 4em;
     width: 100%;
+    padding-top: 0.6em;
    
 }
 .Weather .weather-summary .temperature{
     font-size: 3rem;
-  
+    margin-left: 0.2em;
     color: #222;
 }
 .weather-summary .temperature-unit {

@@ -17,7 +17,8 @@ function Weather() {
           ready:true,
           temperature: Math.round(response.data.main.temp),
           humidity: response.data.main.humidity,
-          iconUrl: `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`,
+          // iconUrl: `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`,
+          iconCode: response.data.weather[0].icon,
           wind: Math.round(response.data.wind.speed),
           city: response.data.name
         }
