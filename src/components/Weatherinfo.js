@@ -8,7 +8,7 @@ export default function Weatherinfo(props) {
     <div className='Weatherinfo'>
      <div className="weather-summary">
         <div className="weather-details part-one">
-            <WeatherIcon code={props.apiData.iconCode}/>             
+            <WeatherIcon code={props.apiData.iconCode} size={512}/>             
             <WeatherTemperature celsius={props.apiData.temperature}/>
             <div className="weather-details-phw">
                 
@@ -23,7 +23,8 @@ export default function Weatherinfo(props) {
             </div>
             <div className="description">{props.apiData.description}</div>
         </div>               
-      </div>        
+      </div> 
+           
     </div>
   )
 
