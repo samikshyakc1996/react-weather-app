@@ -1,6 +1,6 @@
 import './styles/App.css';
-import Weather from './components/Weather';
-import Footer from './components/Footer';
+import Weather from './Weather';
+import Footer from './Footer';
 function App() {
   return (
     <div className="App">
