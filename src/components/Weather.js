@@ -13,7 +13,6 @@ function Weather() {
     let apiKey="2e06fc0bb0889b11105d72fe2da61bee";
 
     function handleResponse(response){
-      console.log("response is:",response);
       
       setWeatherData(
         {

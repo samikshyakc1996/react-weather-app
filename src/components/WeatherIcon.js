@@ -29,7 +29,7 @@ const iconMapping={
      icon={iconMapping[props.code]}
     color= '#EC6E4C'
     size= {props.size}
-    animate= "true"
+    animate= {true}
   />
     </div>
   )

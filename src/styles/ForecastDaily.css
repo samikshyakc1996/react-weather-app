@@ -1,0 +1,10 @@
+/* .ForecastDaily{
+    display: flex;
+    flex-direction: column;
+} */
+.ForecastDaily .icon{
+    margin:10px 0;
+}
+.ForecastDaily .minTemp{
+    opacity: 0.6;
+}
