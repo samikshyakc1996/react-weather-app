@@ -1,0 +1,6 @@
+.WeatherForecast .icon{
+    margin:10px 0;
+}
+.WeatherForecast .minTemp{
+    opacity: 0.6;
+}
