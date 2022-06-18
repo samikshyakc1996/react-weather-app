@@ -83,6 +83,12 @@ text-align: right;
         border: none;
         min-width: 80%;
     }
+    form{
+        padding: 0 8px;
+    }
+    .Weather .weather-summary{
+        padding: 0 8px;
+    }
 
     .Weather .weather-summary .temperature {
         font-size: 2rem;
