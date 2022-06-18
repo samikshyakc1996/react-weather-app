@@ -81,6 +81,7 @@ text-align: right;
         height: auto;
         padding: 0;
         border: none;
+        min-width: 80%;
     }
 
     .Weather .weather-summary .temperature {

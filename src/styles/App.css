@@ -41,11 +41,11 @@ h1.app-title {
   
 }
 @media (max-width:628px) {
-  h1.app-title{
+  /* h1 .app-title{
     width: 100%;
-  }
+  } */
   .container{
-   padding: 0 1em;
+   padding: 0;
   }
   
 }
