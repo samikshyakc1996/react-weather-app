@@ -8,3 +8,19 @@
 .ForecastDaily .minTemp{
     opacity: 0.6;
 }
+
+@media (max-width:628px) {
+    .ForecastDaily .day{
+        font-size: 0.9rem;
+    }
+    .ForecastDaily .icon canvas{
+        height: 1.5em;
+        width: auto;
+    }
+    .ForecastDaily .minTemp{
+        font-size: 0.7rem;
+    }
+    .ForecastDaily .maxTemp{
+        font-size: 0.7rem;
+    }
+}

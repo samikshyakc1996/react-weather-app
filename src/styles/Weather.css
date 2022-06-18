@@ -1,7 +1,7 @@
 .Weather{
     border:1px solid rgb(227, 225, 225);
     height: 25rem;
-    width: 100%;
+    
     margin:0 auto;
     padding: 2em;
 }
@@ -12,16 +12,21 @@ form {
 .Weather form input[type=text]{
     width: 80%;
     height: 3em;
+    /* border:none; */
+    padding-left: 1em;
     /* margin: 0 0  2rem 0; */
 }
 .Weather form input[type=submit]{
-    background-color: rgb(34, 181, 222);
+    /* background-color: rgb(34, 181, 222); */
     /* padding: 1em auto; */
-    color:#f5f5f5;
+    background-color: #CBBBF8;
+    color:#000000;
     border-radius: 4px;
     margin: auto 0 auto 1em;
     height: 3em;
     width: 20%;
+    border:none;
+    font-size: 0.7em;
 }
 .Weather .weather-summary{
     display: flex;
@@ -57,7 +62,7 @@ text-align: right;
 .Weather .weather-summary canvas{
     height: 4em;
     width: 100%;
-    padding-top: 0.6em;
+    
    
 }
 .Weather .weather-summary .temperature{
@@ -70,41 +75,25 @@ text-align: right;
    padding-top: 0.7em;
    margin:0 0.4em;
 }
-/*
-.Weather .weather-summary{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-.Weather .weather-summary .city-name{
-    opacity: 0.5;
-    margin:2px;
-    font-size: 1.5rem;   
-}
-.Weather .weather-summary .description{
-    text-transform: capitalize;
-}
+@media (max-width:628px) {
+    .Weather{
+       
+        height: auto;
+        padding: 0;
+        border: none;
+    }
 
-.Weather .wrapper{
-    display: flex;
-    margin: 1rem;
-    margin: 1rem auto;
-    padding: 1rem 0;
-    width: 100%;
-}
-.Weather .row{
-    display: flex;
-    justify-content: space-around;
-}
-.Weather .row .col-sm-6 img, img{
-height: 4rem;
-width: auto;
-}
-.col-sm-2 {
-    padding: 0 20px;
-    margin: 0 20px;
-}
+    .Weather .weather-summary .temperature {
+        font-size: 2rem;
 
-.Weather .col-sm-2 .weeklyforecast-details{
-    opacity: 0.5;
-} */
+    }
+    .Weather .weather-details-phw{
+        padding-top: 0.7em;
+    }
+    .Weather .weather-summary canvas{
+        height: auto;
+    }
+    .weather-summary .part-two .city-name{
+        font-size: 1em;
+    }
+}

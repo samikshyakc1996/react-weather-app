@@ -1,6 +1,7 @@
 .Footer{
     width: 100%;
     font-size: 1rem;
+    
 }
 .container{
     width: 70%;
@@ -8,13 +9,32 @@
 .Footer p{
     position: fixed; 
     bottom: 0;
-   
+    background: rgb(203, 187, 248);
     /* Height of the footer*/ 
     height: 2em;
-   width: 100%;
-    background: rgb(203, 187, 248);
+    width: 100%;
+    
     margin:0px;
     text-align: center;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
+@media (max-width:628px) {
+    
+    .Footer{
+      
+      display: inline;
+      background-color: red;
+    }
+    .Footer p{
+        height: auto;
+        display: inherit;
+        font-size: 0.9em;
+        padding: 2px;
+        
+    }
+
+  }

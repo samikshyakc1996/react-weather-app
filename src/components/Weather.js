@@ -49,7 +49,7 @@ function Weather() {
         return (
           <div className='Weather'>           
               <form onSubmit={handleForm}>
-                  <input type="text" placeholder="Enter a city.."  onChange={handleCityChange}/>
+                  <input type="text" placeholder="Enter a city.."  onChange={handleCityChange} autoFocus={true}/>
                   <input type="submit" value="Search"  />
                </form>  
                 

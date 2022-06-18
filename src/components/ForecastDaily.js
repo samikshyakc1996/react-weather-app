@@ -24,7 +24,7 @@ function ForecastDaily(props) {
 
   return (
     <div className='ForecastDaily'>
-        <div>{convertDay(props.dailyForecast.dt)}</div>
+        <div className='day'>{convertDay(props.dailyForecast.dt)}</div>
 
         <div className='icon'><WeatherIcon code={props.dailyForecast.weather[0].icon} size={50}/> 
             <div></div>
